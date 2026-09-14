@@ -9,3 +9,5 @@
 
 # Local outputs
 *.html
+
+.vscode/
