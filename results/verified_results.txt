@@ -1,0 +1,24 @@
+VERIFIED ANALYSIS RESULTS
+Rows: 1067
+
+Corrected Welch two-sample t-test
+Below $7,500: n=427, mean=$1979.91, SD=$37.60
+$7,500 or above: n=640, mean=$2278.02, SD=$167.95
+t=-43.3069, df=732.43, p=3.656e-204
+Mean difference (lower-higher)=$-298.11
+95% CI=[$-311.62, $-284.59]
+
+Regression GAINS ~ annual_private_min
+Intercept=11.669321
+Slope=-0.000835669
+R^2=0.149887
+p=1.755e-39
+
+Bootstrap (5,000 resamples, Python RNG seed 123)
+Mean=$2158.64
+95% percentile CI=[$2147.19, $2170.40]
+
+10-fold CV (shuffle=True, seed=123; GAINS ~ annual_private_min)
+RMSE=12.0897
+MAE=6.8585
+R^2=0.146233

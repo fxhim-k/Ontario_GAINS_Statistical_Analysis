@@ -1,0 +1,66 @@
+---
+title: "Ontario Senior Income & GAINS Benefits"
+subtitle: "Statistical Analysis in R"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme: readable
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+source("R/00_setup.R")
+```
+
+# Project Objective
+
+This project evaluates how minimum annual private income relates to Ontario GAINS support and minimum total monthly income across the published GAINS benefit-rate schedule for seniors aged 75+.
+
+> **Data limitation:** the source is a benefit-rate table, not a random sample of individual recipients. Inferential procedures are therefore used primarily to demonstrate statistical methods and compare segments of the published schedule.
+
+# Data Preparation
+
+```{r cleaning}
+source("R/01_data_cleaning.R")
+```
+
+# Exploratory Analysis
+
+```{r eda}
+source("R/02_exploratory_analysis.R")
+```
+
+# Hypothesis Testing
+
+The revised test consistently compares **minimum total monthly income** across groups defined by **minimum annual private income** using a $7,500 threshold.
+
+```{r hypothesis}
+source("R/03_hypothesis_testing.R")
+```
+
+# Bootstrap Resampling
+
+The bootstrap evaluates the stability of the mean across schedule rows. It should not be interpreted as a conventional population confidence interval because the rows are not sampled individuals.
+
+```{r bootstrap}
+source("R/04_bootstrap_analysis.R")
+```
+
+# Regression Analysis
+
+```{r regression}
+source("R/05_regression_analysis.R")
+```
+
+# Model Validation and Leakage Review
+
+The original assignment predicted total monthly income using all remaining columns. Because minimum total monthly income is exactly reconstructed by combined OAS/GIS + GAINS + minimum monthly private income, that design leaks the target into the predictors. The revised validation cross-validates the simpler `GAINS ~ annual_private_min` model instead.
+
+```{r validation}
+source("R/06_model_validation.R")
+```
+
+# Conclusion
+
+The project demonstrates a complete statistical workflow while highlighting two professional lessons: statistical significance is not the same as predictive strength, and implausibly perfect validation performance can indicate target leakage rather than a superior model.

@@ -1,0 +1,11 @@
+clean_name,source_column,description
+annual_private_min,Annual Income Private (min.) /Revenu privé annuel (min.),Minimum annual private income for a rate-table band
+annual_private_max,Annual Income Private (max.) /Revenu privé annuel (max.),Maximum annual private income for a rate-table band
+gains,GAINS / RRAG,Monthly Ontario GAINS/RRAG amount
+oas_gis_total,Total OAS/GIS /SV/SRG total,Monthly OAS + GIS total
+oas,OAS / SV,Monthly Old Age Security amount
+gis,GIS / SRG,Monthly Guaranteed Income Supplement amount
+total_monthly_min,Total Monthly Income (min.) /Revenu mensuel total (min.),Minimum total monthly income
+total_monthly_max,Total Monthly Income (max.) /Revenu mensuel total (max.) ,Maximum total monthly income
+monthly_private_min,Monthly Income Private (min.) /Revenu privé mensuel (min.),Minimum monthly private income
+monthly_private_max,Monthly Income Private (max.) /Revenu privé mensuel (max.),Maximum monthly private income

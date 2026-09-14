@@ -1,0 +1,11 @@
+# R
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# OS
+.DS_Store
+
+# Local outputs
+*.html

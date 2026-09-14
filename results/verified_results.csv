@@ -1,0 +1,25 @@
+metric,value
+Rows,1067.0
+Mean annual private income (min),10054.477975632615
+Mean GAINS,3.267104029990628
+Mean total monthly income (min),2158.7180506091845
+Lower-group n,427.0
+Lower-group mean total monthly income,1979.9090398126461
+Higher-group n,640.0
+Higher-group mean total monthly income,2278.0171874999996
+Welch t,-43.30685195222972
+Welch df,732.4325804133923
+Welch p-value,3.655795539308769e-204
+Mean difference (lower - higher),-298.1081476873535
+95% CI lower,-311.62213721936604
+95% CI upper,-284.59415815534095
+Regression intercept,11.66932123293936
+Regression slope,-0.0008356691638603022
+Regression R-squared,0.14988709516363727
+Regression p-value,1.7550792970618938e-39
+CV RMSE,12.089683219377536
+CV MAE,6.858456830067738
+CV R-squared,0.14623328897825338
+Bootstrap mean,2158.6386443392685
+Bootstrap 95% CI lower,2147.1880281162134
+Bootstrap 95% CI upper,2170.4042507029053
